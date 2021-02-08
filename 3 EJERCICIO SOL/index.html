@@ -1,0 +1,48 @@
+<!-- 1.	Conocida la altura(h) de un poste y el largo de la sombra de este proyectada sobre la acera(s),a una hora determinada del día, haga un programa que calcule e imprima (grados, minutos y segundos), el ángulo de incidencia del sol en ese momento.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Incidencia del sol</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/wave.svg" alt="">
+        <h1>  Calculadora de Incidencia del Sol </h1>
+    </header>
+    <div class="pregunta">
+        Conocida la altura(h) de un poste y el largo de la sombra de este proyectada sobre la acera(s),a una hora determinada del día, haga un programa que calcule e imprima (grados, minutos y segundos), el ángulo de incidencia del sol en ese momento.
+    </div>
+    <form class="formulario" action="">
+        <div class="card">
+            <label for="altura">Altura:</label>
+            <input id="altura" type="text">
+        </div>
+        <div class="card">
+            <label for="largo">Largo de la sombra:</label>
+            <input id="largo" type="text">
+        </div>
+        <div class="botones_form">
+            <input type="submit" class="btn_form" value="Calcular" onclick="tomardatos(); return false;">
+            <input type="reset" class="btn_form" value="Reiniciar" onclick="ocultarResultado()">
+        </div>
+    </form>
+
+    <div class="resultados" id="resultado_general">
+        <div class="grados_minutos_seg">
+            <p><span id="g"></span>grados</p>
+            <p><span id="m"></span>minutos</p>
+            <p><span id="s"></span>segundos</p>
+        </div>
+        <p class="resultado_angulo">
+            El ángulo es: <span id="resultado"></span>
+        </p>
+    </div>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>

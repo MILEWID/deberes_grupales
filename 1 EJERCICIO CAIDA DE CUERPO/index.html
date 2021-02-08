@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <title>Altura en caida de cuerpos</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/wave.svg" alt="">
+        <h1>Altura en caida de cuerpos</h1>
+    </header>
+    <p class="desc">
+        Determinar desde que altura se dejó caer un cuerpo, si se sabe que este estuvo en el aire t segundos
+    </p>
+    <div class="contendor">
+        <form action="" id="formulario" class="formulario">
+            <div class="card">
+                <label for="tiempo">Tiempo:</label>
+                <input type="text" id="tiempo">
+            </div>
+            <input type="submit" class="boton" value="Calcular">
+            <input type="reset"  class="boton"  value="Reiniciar">
+        </form>
+        <div class="contenedor_res">
+            <p  class= "resultado" id="result">x</p>
+            <img src="img/caida.png" class="img_caida" alt="">
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Compra y venta Productos</title>
+</head>
+
+<body>
+    <h1>Solo por hoy producto en descuento</h1>
+    <div class="productos">
+        <p>10% <span>por la compra de hasta 3 docenas </span></p>
+        <p>15% <span>por la compra de mas de 3 docenas + 1 UNIDAD </span></p>
+    </div>
+    <div class="form">
+        <img src="img/gato.jfif" alt="producto" />
+        <form action="" id="form">
+            <label for="docenas"></label>
+            <input type="number" name="número de docenas" id="docenas" min="0" max="100" />
+            <input type="submit" name="" />
+            <input type="reset" name="" />
+        </form>
+    </div>
+    <div class="descuento">
+        <p>Monto de la compra: <span id="compra"></span></p>
+        <p>Monto del descuento: <span id="desc"></span></p>
+        <p>Total a pagar: <span id="tot"></span></p>
+        <p>Unidades de regalo: <span id="uni"></span></p>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

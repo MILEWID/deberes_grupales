@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Hora al siguiente segundo</title>
+  </head>
+  <body>
+    <h1>Hora al siguiente segundo</h1>
+    <form action="" id="form">
+      <h2>Hora Actual</h2>
+      <div class="card">
+        <label for="hora">Ingrese la hora:</label>
+        <input type="number" name="hora" id="hora" min="0" max="23" />
+      </div>
+      <div class="card">
+        <label for="min">Ingrese los minutos:</label>
+        <input type="number" id="min" min="0" max="59" />
+      </div>
+      <div class="card">
+        <label for="seg">Ingrese los segundos:</label>
+        <input type="number" id="seg" min="0" max="59" />
+      </div>
+      <input type="submit" value="Calcular" />
+      <input type="reset" value="Reiniciar" />
+    </form>
+
+    <div id="result">
+      <h2>Hora al siguiente segundo</h2>
+      <div class="card">
+        <label for="hora">hora:</label>
+        <input readonly type="number" name="hora" id="horas" min="0" max="24" />
+      </div>
+      <div class="card">
+        <label for="min">minutos:</label>
+        <input readonly type="number" id="mins" min="0" max="60" />
+      </div>
+      <div class="card">
+        <label for="seg">segundos:</label>
+        <input readonly type="number" id="segs" min="0" max="60" />
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

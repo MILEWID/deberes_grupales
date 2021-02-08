@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <title>Hallar número</title>
+</head>
+<body>
+    <header>
+        <img src="img/wave.svg" alt="">
+        <h1>Hallar número de 5 cifras</h1>
+    </header>
+    <form action="" id="formulario">
+        <div class="card">
+            <label for="numero1">Numero 1:</label>
+            <input type="number" id="numero1" min="10000" max="99999" >
+        </div>
+        <div class="card">
+            <label for="numero2">Numero 2:</label>
+            <input type="number" id="numero2" min="10000" max="99999" >
+        </div>
+        <div class="card">
+            <label for="numero3">Numero 3:</label>
+            <input type="number" id="numero3" min="10000" max="99999" >
+        </div>
+        <div class="card">
+            <label for="numero4">Numero 4:</label>
+            <input type="number" id="numero4" min="10000" max="99999" >
+        </div>
+        <div class="card">
+            <label for="numero5">Numero 5:</label>
+            <input type="number" id="numero5" min="10000" max="99999" >
+        </div>
+        <div class="botones">
+            <input type="submit" value="Calcular">
+            <input type="reset" value="Reiniciar">
+        </div>
+
+    </form>
+    <p>El valor resultante es: <span id="result"></span></p>
+    <script src="index.js"></script>
+    <footer>
+
+    </footer>
+</body>
+</html>
